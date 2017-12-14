@@ -1,5 +1,5 @@
 
-var URL = "http://localhost:1234/data.json";
+var URL = "http://localhost/data.json";
 
 $(document).ready(function(){
     $.get(URL, function(data, status){

@@ -1,0 +1,39 @@
+[
+  {
+  "clientID": 1,
+  "first_name": "S",
+  "last_name": "P",
+  "email": "jpenddreth0@census.gov",
+  "phone": "Male",
+  "business": "test business",
+  "bank_acc": "123456789",
+  "address": {
+        "street1": "A201,",
+        "street2": "DAIICT",
+        "city": "Gandhinagar",
+        "state": "Gujarat",
+        "country": "India",
+        "pincode": "382007"
+      },
+  "status":"Active"
+  },
+
+  {
+  "clientID": 2,
+  "first_name": "S",
+  "last_name": "P",
+  "email": "jpenddreth0@census.gov",
+  "phone": "Male",
+  "business": "test business",
+  "bank_acc": "123456789",
+  "address": {
+        "street1": "A201,",
+        "street2": "DAIICT",
+        "city": "Gandhinagar",
+        "state": "Gujarat",
+        "country": "India",
+        "pincode": "382007"
+      },
+  "status":"Passive"
+  }
+]

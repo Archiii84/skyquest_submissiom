@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tp</title>
+    <base href="/">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+</head>
+<body style="">
+  <app-root></app-root>
+    <div style="height: 30px">
+
+    </div>
+
+          
+        <div class="col-sm-3 sidenav">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active fnt"><a href="#section1"><span class="glyphicon glyphicon-star"></span> Tarrifs <span class="fa arrow"></span></a>
+                        
+                    </li>
+                    <li><a href="#section2"><span class="glyphicon glyphicon-user"></span>  Customers</a></li>
+                    <li><a href="#section3"><span class="fa fa-calculator"></span>  Finance</a></li>
+                    <li><a href="#section3"><span class="fa fa-cubes"></span> Networking</a></li>
+                    <li><a href="#section3"><span class="fa fa-life-ring"></span> Support</a></li>
+                    <li><a href="#section3"><span class="glyphicon glyphicon-menu-right"></span>_Administration</a></li>
+                    <li><a href="#section3"><span class="fa fa-cogs"></span> Config</a></li>
+                    <li><a href="#section3"><span class="glyphicon glyphicon-pencil"></span> My Profile</a></li>
+                    <li><a href="#section3"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                    
+                </ul><br>
+        </div>
+        <div class="col-sm-9">
+            Welcome,Main Admin!!
+            <span class="pull-right">
+            <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Client</button></a>
+            </span>
+            <hr>
+        </div>    
+        <div class="">
+                <div class="col-lg-9">
+                  <div class="col-md-2 col-sm-6">
+
+                      <div class="panel panel-green">
+
+                          <div class="panel-heading">
+
+                              <div class="row">
+
+                                  <div class="col-xs-3">
+
+                                      <i class="fa fa-exchange fa-4x"></i>
+
+                                  </div>
+
+                                  <div class="col-xs-9 text-right">
+
+                                      <div class="huge" id="total_client">0</div>
+
+                                      <div>Total Clients</div>
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                          <a href="#">
+
+                              <div class="panel-footer">
+
+                                  <span class="pull-left">View</span>
+
+                                  <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+
+                                  <div class="clearfix"></div>
+
+                              </div>
+
+                          </a>
+
+                      </div>
+
+                  </div>
+
+                        <div class="col-md-2 col-sm-6">
+                            <div class="panel panel-green">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <i class="fa fa-exchange fa-4x"></i>
+                                        </div>
+                                        <div class="col-xs-9 text-right">
+                                            <div class="huge" id="active_client">0</div>
+                                            <div>Active Clients</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <div class="panel-footer">
+                                        <span class="pull-left">View</span>
+                                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-6">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <i class="fa fa-user fa-4x"></i>
+                                        </div>
+                                        <div class="col-xs-9 text-right">
+                                            <div class="huge" id="passive_client">0</div>
+                                            <div>Passive Clients</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <div class="panel-footer">
+                                        <span class="pull-left"> View </span>
+                                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <div class="panel panel-yellow">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <i class="fa fa-support fa-4x"></i>
+                                        </div>
+                                        <div class="col-xs-9 text-right">
+                                            <div class="huge" id="pipeline_client">0</div>
+                                            <div>Pipeline Clients</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <div class="panel-footer">
+                                        <span class="pull-left">View</span>
+                                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <div class="panel panel-red">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <i class="fa fa-plug fa-4x"></i>
+                                        </div>
+                                        <div class="col-xs-9 text-right">
+                                            <div class="huge" id="prospect_client">0</div>
+                                            <div>Prospect Clients</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <div class="panel-footer">
+                                        <span class="pull-left">View</span>
+                                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                        
+          
+        </div>
+        <div class="col-lg-9">
+            <div class="col-md-11">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-user"></i> Client
+                        </div>
+                        <table class="table" id="client_table">
+                            <thead>
+                              <tr>
+                                <th>Client ID</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Business Name</th>
+                                <th>Email ID</th>
+                                <th>Phone No</th>
+                                <th>City</th>
+                                <th>Status</th>  
+                                <th>Action</th>
+                              </tr>
+                            </thead>
+                            <tbody id="records_table">
+
+                            </tbody>
+                          </table>
+                            
+                    </div>
+                </div>
+        </div>
+
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content" style="background-color: rgb(242, 241, 243)">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Client Details</h4>
+              </div>
+              <div class="modal-body">
+                ​<div>
+
+                    <div class="col-lg-2"></div>
+
+                    <div class="col-lg-12" style="background-color:rgb(242, 241, 243);">
+
+
+                      <div style="height:30px;"></div>
+
+                      <form class="form-horizontal" action="#" id="add_client_form">
+
+                        <div class="form-group">
+
+                            <label class="control-label col-sm-3" for="Cid">Client ID:</label>
+
+                            <div class="col-md-3">
+
+                            <input type="text" class="form-control" id="cid" placeholder="Enter ClientID" name="Client ID">
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                                <label class="control-label col-sm-3" for="Cfname"> First Name:</label>
+
+                                <div class="col-md-3">
+
+                                    <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+
+                                </div>
+
+                                <label class="control-label col-sm-2" for="lname">Last Name:</label>
+
+                                <div class="col-md-3">
+
+                                    <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+
+                                </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                                <label class="control-label col-sm-3" for="Cid">Email:</label>
+
+                                <div class="col-md-3">
+
+                                    <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
+
+                                </div>
+
+                                <label class="control-label col-sm-2" for="Cid">Phone No:</label>
+
+                                <div class="col-md-3">
+
+                                    <input type="text" class="form-control" id="phone" placeholder="Enter Phone no." name="pno">
+
+                                </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                                <label class="control-label col-sm-3" for="Cid">Business name:</label>
+
+                                <div class="col-md-4">
+
+                                    <input type="text" class="form-control" id="business" placeholder="" name="bname">
+
+                                </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                                <label class="control-label col-sm-3" for="Cid">Bank Account Number:</label>
+
+                                <div class="col-md-4">
+
+                                    <input type="text" class="form-control" id="bank" placeholder="" name="bno">
+
+                                </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                                <label class="control-label col-sm-3">Address:</label>
+
+                                <div class="col-md-4">
+
+                                    <input type="text" class="form-control" id="address" placeholder="Address" name="add">
+
+                                </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                                <label class="control-label col-sm-3" ></label>
+
+                                <div class="col-md-3">
+
+                                    <input type="text" class="form-control" id="add1" placeholder="Street1" name="add1">
+
+                                </div>
+
+                                <div class="col-md-3">
+
+                                    <input type="text" class="form-control" id="add2" placeholder="Street2" name="add2">
+
+                                </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                                <label class="control-label col-sm-3" for="Cid"> City :</label>
+
+                                <div class="col-md-4">
+
+                                    <input type="text" class="form-control" id="city" placeholder="City" name="city">
+
+                                </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                                <label class="control-label col-sm-3" for="Cid">State:</label>
+
+                                <div class="col-md-3">
+
+                                    <input type="text" class="form-control" id="state" placeholder="State" name="state">
+
+                                </div>
+
+                                <label class="control-label col-sm-2" for="Cid">Country:</label>
+
+                                <div class="col-md-3">
+
+                                    <input type="text" class="form-control" id="country" placeholder="" name="country">
+
+                                </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                                <label class="control-label col-sm-3" for="Cid">Status:</label>
+
+                                <div class="col-md-4">
+
+                                        <select class="form-control" id="status">
+
+                                                <option>Select Status</option>
+
+                                                <option value="Active">Active</option>
+
+                                                <option value="Passive">Passive</option>
+
+                                                <option value="Pipeline">Pipeline</option>
+
+                                                <option value="Prospect">Prospect</option>
+
+                                              </select>
+
+
+
+                                </div>
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                                <label class="control-label col-sm-3" for="Cid"></label>
+
+                                <div class="col-md-5">
+
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+
+
+
+                                </div>
+
+                                <div>
+
+                                        <button type="button" class="btn btn-success" id="add_client">Submit</button>
+
+                                </div>
+
+                        </div>
+
+                      </form>
+
+                    </div>
+
+                    <div class="col-lg-2"></div>
+
+                </div>
+
+              </div>
+              <div class="modal-footer">
+              </div>
+            </div>
+
+          </div>
+        </div>       
+        <script src="script.js"></script>
+
+
+</body>
+
+</html>
